@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [Header("Refrences")]
+    [SerializeField] private GameObject OtherPlayer;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        OtherPlayer.transform.position = new Vector2(-transform.position.x, -transform.position.y);
     }
 }
