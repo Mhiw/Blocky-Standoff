@@ -27,7 +27,7 @@ public class Spawner : MonoBehaviour
 
     private void Spawn()
     {
-        Instantiate(enemy, spawnPoints[Random.Range(0, spawnPoints.Length - 1)].transform.position, Quaternion.identity);
+        //Instantiate(enemy, spawnPoints[Random.Range(0, spawnPoints.Length - 1)].transform.position, Quaternion.identity);
     }
 
     private void RestartTime()
