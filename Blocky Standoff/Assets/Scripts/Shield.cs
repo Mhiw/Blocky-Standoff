@@ -8,6 +8,7 @@ public class Shield : MonoBehaviour
     public GameObject P1;
     public GameObject P2;
     public GameObject shield;
+    public GameObject enemy;
     private bool isAtP1 = true;
 
     void Update()
@@ -23,6 +24,16 @@ public class Shield : MonoBehaviour
         } else if(!isAtP1)
         {
         shield.transform.position = P2.transform.position;
+        }
+
+    
+    }
+
+    void OnTriggerEnter2D(Collider2D collision) 
+    {
+        if (collision.CompareTag("enemy"))
+        {
+            print("Hola");
         }
     }
 }

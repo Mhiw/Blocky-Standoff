@@ -563,6 +563,7 @@ GameObject:
   - component: {fileID: 513861316}
   - component: {fileID: 513861315}
   - component: {fileID: 513861314}
+  - component: {fileID: 513861317}
   m_Layer: 0
   m_Name: Sheild
   m_TagString: Untagged
@@ -585,6 +586,7 @@ MonoBehaviour:
   P1: {fileID: 14208598}
   P2: {fileID: 1650442526}
   shield: {fileID: 513861313}
+  enemy: {fileID: 0}
 --- !u!212 &513861315
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -626,8 +628,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.039215688, g: 1, b: 1, a: 0.2}
+  m_Sprite: {fileID: 21300000, guid: 6a11e11bd06a3344cbe4d37106f96344, type: 3}
+  m_Color: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 0.5803922}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -645,13 +647,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 513861313}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.86, y: 0.94, z: -0.28}
-  m_LocalScale: {x: 2.0023847, y: 2.0023847, z: 2.0023847}
+  m_LocalPosition: {x: 2.86, y: 1.01, z: 0.21}
+  m_LocalScale: {x: 13.497002, y: 13.497002, z: 13.497002}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &513861317
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513861313}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0016601153, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.0871938
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,7 +972,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1048821273}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.46}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1211,9 +1229,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000000059604645, y: 0}
+  m_Offset: {x: -0.00000011920929, y: 0}
   serializedVersion: 2
-  m_Radius: 0.8476644
+  m_Radius: 1.015165
 --- !u!1 &1980251468
 GameObject:
   m_ObjectHideFlags: 0
@@ -1325,7 +1343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7258438501374529033, guid: f5a5cc93bde5861ed86d26e52f8e6993, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.015
       objectReference: {fileID: 0}
     - target: {fileID: 7258438501374529033, guid: f5a5cc93bde5861ed86d26e52f8e6993, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1366,6 +1384,10 @@ PrefabInstance:
     - target: {fileID: 7258438501374529034, guid: f5a5cc93bde5861ed86d26e52f8e6993, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7258438501374529034, guid: f5a5cc93bde5861ed86d26e52f8e6993, type: 3}
+      propertyPath: m_TagString
+      value: enemy
       objectReference: {fileID: 0}
     - target: {fileID: 7258438501374529038, guid: f5a5cc93bde5861ed86d26e52f8e6993, type: 3}
       propertyPath: target
