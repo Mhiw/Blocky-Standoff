@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    [Header("Refrences")]
+    [SerializeField] private GameObject enemy;
+    [SerializeField] private GameObject[] spawnPoints;
+
     [Header("Stats")]
     [SerializeField] private float startTime = 10f;
 
@@ -17,7 +21,13 @@ public class Spawner : MonoBehaviour
         } else
         {
             RestartTime();
+            Spawn();
         }
+    }
+
+    private void Spawn()
+    {
+        Instantiate(enemy, spawnPoints[Random.Range(0, spawnPoints.Length - 1)].transform.position, Quaternion.identity);
     }
 
     private void RestartTime()
