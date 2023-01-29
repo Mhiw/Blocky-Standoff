@@ -8,10 +8,7 @@ public class Enemy : MonoBehaviour
     {
         if(c.gameObject.tag == "Player")
         {
-            Debug.Log("Loosing time");
-        }else if(c.gameObject.tag == "Shield")
-        {
-            Destroy(gameObject);
+            Debug.Log("Hello");
         }
     }
 }
