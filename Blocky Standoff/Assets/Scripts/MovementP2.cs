@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class MovementP2 : MonoBehaviour
 {
     [Header("Refrences")]
     [SerializeField] private Rigidbody2D rb;
@@ -20,6 +20,6 @@ public class Movement : MonoBehaviour
 
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
-        rb.velocity = new Vector2(horizontalInput * speed, verticalInput * speed);
+        rb.velocity = new Vector2(horizontalInput * -speed, verticalInput * -speed);
     }
 }

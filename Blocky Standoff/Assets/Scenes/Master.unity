@@ -222,7 +222,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95eec04af3796a17cb8daaec35b2d36f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OtherPlayer: {fileID: 1650442526}
   rb: {fileID: 14208602}
   speed: 7
 --- !u!50 &14208602
@@ -1067,6 +1066,8 @@ GameObject:
   - component: {fileID: 1650442528}
   - component: {fileID: 1650442527}
   - component: {fileID: 1650442529}
+  - component: {fileID: 1650442531}
+  - component: {fileID: 1650442530}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Untagged
@@ -1157,6 +1158,62 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.08
+--- !u!50 &1650442530
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650442526}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &1650442531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650442526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30cea87eb18251d44919fe8cb4ba4195, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 1650442530}
+  speed: 7
+--- !u!1 &1881004108 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7258438501374529034, guid: f5a5cc93bde5861ed86d26e52f8e6993, type: 3}
+  m_PrefabInstance: {fileID: 7258438502401156907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!58 &1881004113
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881004108}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.000000059604645, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.8476644
 --- !u!1001 &7258438502401156907
 PrefabInstance:
   m_ObjectHideFlags: 0
