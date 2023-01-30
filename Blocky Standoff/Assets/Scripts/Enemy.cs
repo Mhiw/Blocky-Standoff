@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     {
         if(c.gameObject.tag == "Shield")
         {
-            Debug.Log("Hello");
+            Destroy(gameObject);
         }
     }
 }
