@@ -567,7 +567,7 @@ GameObject:
   - component: {fileID: 513861320}
   m_Layer: 0
   m_Name: Sheild
-  m_TagString: B
+  m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -613,7 +613,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 33ff2f638fb1821d5bf75096c61742e0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6a11e11bd06a3344cbe4d37106f96344, type: 3}
   m_Color: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 0.5803922}
   m_FlipX: 0
   m_FlipY: 0
@@ -632,8 +632,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 513861313}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.86, y: 1.01, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 13.497002}
+  m_LocalPosition: {x: 2.8237, y: 0.99884, z: 0}
+  m_LocalScale: {x: 13.979115, y: 13.979115, z: 18.867613}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -670,16 +670,16 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0.12
   m_Points:
-  - {x: -0.0024182647, y: -0.15758173}
-  - {x: -0.064995706, y: -0.14142083}
-  - {x: -0.13418666, y: -0.08495958}
-  - {x: -0.15426518, y: 0.036825202}
-  - {x: -0.10869115, y: 0.121237546}
-  - {x: -0.019949736, y: 0.16039804}
-  - {x: 0.115989104, y: 0.12150881}
-  - {x: 0.1626116, y: 0.015440688}
-  - {x: 0.12616478, y: -0.100854404}
-  - {x: 0.008113988, y: -0.15758172}
+  - {x: 0.0074118227, y: -0.074979655}
+  - {x: -0.029832892, y: -0.07168624}
+  - {x: -0.07772667, y: -0.03014503}
+  - {x: -0.07222836, y: 0.031990353}
+  - {x: -0.049193017, y: 0.06454653}
+  - {x: 0.0044067875, y: 0.080722496}
+  - {x: 0.06312461, y: 0.05478385}
+  - {x: 0.08085302, y: -0.003248334}
+  - {x: 0.06631592, y: -0.05295852}
+  - {x: 0.010897538, y: -0.07542947}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -704,7 +704,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1022,8 +1022,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1976882909725340557, guid: f5a5cc93bde5861ed86d26e52f8e6993, type: 3}
-      propertyPath: m_IsTrigger
+      propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1976882909725340557, guid: f5a5cc93bde5861ed86d26e52f8e6993, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7258438501374529033, guid: f5a5cc93bde5861ed86d26e52f8e6993, type: 3}
       propertyPath: m_RootOrder
