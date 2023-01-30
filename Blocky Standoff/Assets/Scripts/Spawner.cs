@@ -7,6 +7,7 @@ public class Spawner : MonoBehaviour
     [Header("Refrences")]
     [SerializeField] private GameObject enemy;
     [SerializeField] private GameObject[] spawnPoints;
+    [SerializeField] private GameObject[] players;
 
     [Header("Stats")]
     [SerializeField] private float startTime = 10f;
@@ -27,7 +28,9 @@ public class Spawner : MonoBehaviour
 
     private void Spawn()
     {
-        //Instantiate(enemy, spawnPoints[Random.Range(0, spawnPoints.Length - 1)].transform.position, Quaternion.identity);
+        GameObject enemyObj = Instantiate(enemy, spawnPoints[Random.Range(0, 8)].transform.position, Quaternion.identity);
+        Enemy enemyScr = enemyObj.GetComponent<Enemy>();
+        enemyScr.target = players[Random.Range(0, 2)].transform;
     }
 
     private void RestartTime()
