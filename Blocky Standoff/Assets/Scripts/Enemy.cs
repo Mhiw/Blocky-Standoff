@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D c)
+    private void OnTriggerEnter2D(Collider2D c)
     {
-        if(c.gameObject.tag == "Player")
+        if(c.gameObject.tag == "B")
         {
             Debug.Log("Hello");
         }
