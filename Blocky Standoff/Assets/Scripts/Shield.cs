@@ -9,11 +9,26 @@ public class Shield : MonoBehaviour
     public GameObject shield;
     private bool isAtP1 = true;
 
+    private float currentTime = 0.01f;
+    private float startTime = 0.01f;
+    public float cooldownSpeed;
+
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        ShieldSwitch();
+        if(currentTime > 0.0f)
+        {
+        currentTime += Time.deltaTime * 10f;
+        }
+    }
+    
+
+    public void ShieldSwitch()
+    {
+        if(Input.GetKeyDown(KeyCode.Space) && currentTime > cooldownSpeed)
         {
             isAtP1 = !isAtP1;
+            currentTime = startTime;
         }
 
         if(isAtP1)
