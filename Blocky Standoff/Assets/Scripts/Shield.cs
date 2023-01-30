@@ -19,11 +19,7 @@ public class Shield : MonoBehaviour
         if(currentTime > 0.0f)
         {
         currentTime += Time.deltaTime * 10f;
-        }else
-        {
-        
         }
-        print (currentTime);
     }
     
 
