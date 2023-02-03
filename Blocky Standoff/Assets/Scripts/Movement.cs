@@ -10,6 +10,8 @@ public class Movement : MonoBehaviour
     [Header("Stats")]
     [SerializeField] private float speed = 10;
 
+    public bool pded;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -21,5 +23,16 @@ public class Movement : MonoBehaviour
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
         rb.velocity = new Vector2(horizontalInput * speed, verticalInput * speed);
+
+        
+    }
+
+    
+    private void OnTriggerEnter2D(Collider2D c)
+    {
+        if(c.gameObject.tag == "enemy")
+        {
+            pded = true;
+        }
     }
 }
