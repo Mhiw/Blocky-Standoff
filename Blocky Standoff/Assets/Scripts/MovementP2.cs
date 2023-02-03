@@ -22,4 +22,12 @@ public class MovementP2 : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
         rb.velocity = new Vector2(horizontalInput * -speed, verticalInput * -speed);
     }
+
+    private void OnTriggerEnter2D(Collider2D c)
+    {
+        if(c.gameObject.tag == "enemy")
+        {
+            print("hola");
+        }
+    }
 }
